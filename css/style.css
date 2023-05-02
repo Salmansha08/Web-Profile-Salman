@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family="Open+Sans":wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Open+Sans', sans-serif;
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+}
+    
+header.navbar-container .logo img {
+    width: 200px;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+   
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+   
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+   
+header.navbar-container .nav-list li:hover a {
+    background-color: #0583F2;
+    color: white;
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    align-items: left;
+    padding: 2rem 4rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    Text-transform: uppercase;
+}
+
+h2 {
+    text-transform: capitalize;
+}
+
+main .content {
+    flex: 1;
+    display: flex;
+    box-shadow: 0 2px 8px 2px rgba(52, 52, 52, 0.2);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    
+}
+   
+main .content .content-description {
+    flex: 1 1;
+}
+   
+main .content .content-description .title {
+    font-size: 3.5rem;
+}
+   
+main .content .content-description p {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    text-align: justify;
+}
+   
+main .content .content-description button {
+    padding: .8rem 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Open-Sans', sans-serif;
+    color: white;
+   
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: #1D2D8C;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+main .content .content-description .content-pendidikan{
+    font-size: 1.2rem;
+    line-height: 1rem;
+}
+
+main .content .content-description .isi-pendidikan{
+    font-size: 1rem;
+}
+   
+main .content .content-description button:hover {
+    border: 3px solid #1D2D8C;
+    color: #1D2D8C;
+    background-color: transparent;
+}
+   
+main .content .content-image {
+    flex: 1;
+    display: flex;
+}
+   
+main .content .content-image img {
+    margin: auto;
+    min-width: 250px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+   
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+   
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #1D2D8C;
+   
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+   
+main aside .social-media li {
+    list-style-type: none;
+}
+
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+   
+main aside .social-media li a:hover {
+    color: #0583F2;
+}
+
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+   
+main aside .social-media li a:hover {
+    color: #0583F2;
+}
+
+footer {
+    padding: 15px;
+    color: white;
+    background-color: #1D2D8C;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+#keatas {
+    position: fixed;
+    width:50px;
+    height:50px;
+    bottom: 50px;
+    float: right;
+    right: 50px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #1D2D8C;
+    padding: .5px;
+    border-radius: 100px;
+    transition: all .1s ease-in-out;
+
+}
+
+#keatas:hover {
+    color: #0583F2;
+}
+
+/* Coba Slideshow*/
+
+
+
+/*End of Main Content*/
+   
+/* Medium devices (landscape tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+      flex-direction: column;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+     
+    main .content .content-description .title {
+        font-size: 3rem;
+    }
+     
+    main .content .content-description p {
+        font-size: 1rem;
+    }
+     
+    main .content .content-image {
+        order: -1;
+    }
+}
